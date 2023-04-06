@@ -1,0 +1,179 @@
+/* Config's Fonts */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/*----------------------------------------------------------------------------------------*/
+
+/* Config's */
+*{
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+	text-decoration: none;
+
+	overflow-x: hidden;
+}
+:root{
+	--font-primary:  'Roboto', sans-serif;;
+}
+/*----------------------------------------------------------------------------------------*/
+
+
+/* Banner */
+.header{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+}
+/*----------------------------------------------------------------------------------------*/
+
+
+/* Txt */
+.txt_b{
+	position: absolute;
+	padding-left: 1rem;
+	top: 20%;
+	left: 5%;
+	
+	font-family: var(--font-primary);
+	letter-spacing: 2px;
+    line-height: 3.4rem;
+
+	opacity: 0;
+	animation: animtxt 2s forwards;
+}
+.txt_b h1{
+	font-size: 2.5rem;
+}
+.txt_b p{
+	color: rgb(102, 102, 102);
+    font-size: 1.2rem;
+
+	animation: fadein 4.6s;
+}
+.txt_b h1::first-letter{
+	color: white;
+}
+/* Txt decoração */
+.code_f{
+	position: absolute;
+	z-index: -1;
+	bottom: 65%;
+	right: 19rem;
+
+	opacity: 0.8;
+}
+.art_f{
+	position: absolute;
+	z-index: -1;
+	top: 56%;
+	right: 19rem;
+
+	opacity: 0.8;
+}
+.code_f img, .art_f img{
+	width: 15rem;
+	height: 5rem;
+}
+/* Animação Texto */
+@keyframes animtxt{
+	0%{
+		transform: translateX(-20rem);
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*----------------------------------------------------------------------------------------*/
+
+
+/* Hud */
+.hud_b{
+	position: absolute;
+	top: 4%;
+	right: 5%;
+
+	font-family: var(--font-primary);
+
+	opacity: 0;
+	animation: animhud 2.5s forwards;
+}
+.menu li{
+	display: inline-block;
+	margin-right: 0.6rem;
+}
+.menu_item a{
+	color: black;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.menu_item a:hover{
+	color: #0097B2;
+}
+.menu hr{
+	margin-top: 0.3rem;
+}
+/* Animação Hud */
+@keyframes animhud{
+	0%{
+		transform: translateX(10rem);
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+/*----------------------------------------------------------------------------------------*/
+
+
+/* Social Media */
+.social_b{
+	position: absolute;
+	display: flex;
+	top: 10%;
+	right: 4%;
+
+	justify-content: space-evenly;
+
+	opacity: 0;
+	animation: animsoc 2s 0.2s forwards;
+}
+.social_b i{
+	display: flex;
+	width: 2.5rem;
+	height: 2.5rem;
+
+	color: rgb(97, 97, 97);
+	font-size: 1.4rem;
+
+	align-items: center;
+	justify-content: center;
+}
+.social_b i:hover{
+	color: #0097B2;
+}
+/* Animação Social Media */
+@keyframes animsoc{
+	0%{
+		transform: translateX(10rem);
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+/*----------------------------------------------------------------------------------------*/
